@@ -8,13 +8,13 @@ function exibir() {
 
    let ListaImagem = ""
    let numeros = new Set()
-   while (numero.size < 13) {
+   while (numeros.size < 13) {
        let numero = Math.floor(Math.random() * 13) + 1
        numeros.add(numero)
    }
    let listaNumeros = Array.from(numeros)
    listaNumeros.forEach(numero=> {
-    ListaImagem = ListaImagem + '<img src="../img/' + numero + '.jpg">'
+        ListaImagem = ListaImagem + '<img src="../img/' + numero + '.jpg">'
    })
 
    gal.innerHTML = ListaImagem

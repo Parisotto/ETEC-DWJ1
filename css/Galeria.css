@@ -6,7 +6,7 @@ main{
 section {
     padding: 20px;
     border-bottom: 1px dashed gray;
-    column-count: 4;
+    column-count: 5;
     column-gap: 20px;
 }
 
