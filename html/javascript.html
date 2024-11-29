@@ -29,6 +29,7 @@
             color: gray;
         }
     </style>
+
 </head>
 <body>
     <header>
@@ -43,12 +44,24 @@
     </header>
     <main>
         <section>
-
+            <h1 id="hello">Clique em mim!</h1>
+            <div id="msg"><h1>DIV</h1></div>
         </section> 
     </main>
     <footer>
         <p>Copyright &copy; 1962-2024 - <a href="https://parisotto.net" target="_blank">Parisotto.Net Internet</a></p>
         <p>Website Design by Edson Parisotto</p>
     </footer>
+    <script>
+        function ola() {
+            window.alert("Boa tarde, pessoal")
+        }
+        var elemento = document.getElementById("hello")
+        elemento.addEventListener('click', ola)
+
+        let minhaDiv = document.getElementById("msg")
+        minhaDiv.innerHTML = "<p>Mudei o conteúdo</p>"
+
+    </script>
 </body>
 </html>
