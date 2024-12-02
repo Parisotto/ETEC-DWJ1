@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <title>Página</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/contato.css">
     <style>
         main{
             max-width: 1200px;
@@ -15,6 +16,7 @@
         section {
             padding: 20px;
             border-bottom: 1px dashed gray;
+            text-align: center;
         }
 
         section h1 {
@@ -27,7 +29,43 @@
             text-align: center;
             font-size: 20px;
             color: gray;
+
         }
+
+        #clique-me {
+            display: inline-block;
+            background-color: #00a1ff;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 30px auto;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #clique-me:hover {
+            color: aqua;
+            box-shadow: 0 0 8px 3px #00a1ff55;
+        }
+
+        #msg {
+            font-size: 30px;
+            color: #00a1ff;
+            line-height: 30px;
+        }
+
+        form {
+            max-width: 70%;
+            margin: 30px auto;
+        }
+        
+        #nome {
+            font-size: 25px;
+        }
+
+
+
     </style>
 
 </head>
@@ -44,24 +82,21 @@
     </header>
     <main>
         <section>
-            <h1 id="hello">Clique em mim!</h1>
-            <div id="msg"><h1>DIV</h1></div>
+            <h1>JavaScript</h1>
+            <a id="clique-me">Clique-me!</a>
+            <div><p id="msg">Olá!</p></div>
+            <article></article>
+
+            <form>
+                <input type="text" name="nomeInput" id="nome" placeholder="Digite um nome">
+                <button id="enviar" type="submit">Enviar</button>
+            </form>
         </section> 
     </main>
     <footer>
         <p>Copyright &copy; 1962-2024 - <a href="https://parisotto.net" target="_blank">Parisotto.Net Internet</a></p>
         <p>Website Design by Edson Parisotto</p>
     </footer>
-    <script>
-        function ola() {
-            window.alert("Boa tarde, pessoal")
-        }
-        var elemento = document.getElementById("hello")
-        elemento.addEventListener('click', ola)
-
-        let minhaDiv = document.getElementById("msg")
-        minhaDiv.innerHTML = "<p>Mudei o conteúdo</p>"
-
-    </script>
+    <script src="../js/estudos.js"></script>
 </body>
 </html>
