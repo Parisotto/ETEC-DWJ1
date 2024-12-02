@@ -53,23 +53,23 @@
 }
 
 #i1 {
-    background: url("../img/tabelas.png") center;
+    background: url("../img/tabelas.png") top center;
 }
 
 #i2 {
-    background: url("../img/foto-m.jpg") center;
+    background: url("../img/galeria.png") top center;
 }
 
 #i3 {
-    background: url("../img/foto-p.jpg") center;
+    background: url("../img/galeria-js.png") top center;
 }
 
 #i4 {
-    background: url("../img/xicaradecafe.jpg") bottom;
+    background: url("../img/javascript.png") bottom center;
 }
 
 #i5 {
-    background: url("../img/foto-g.jpg") top;
+    background: url("../img/tamplate.png") top center;
 }
 #artigos article h1 {
     color: gray;
